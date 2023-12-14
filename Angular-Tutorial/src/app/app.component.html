@@ -1,0 +1,103 @@
+ <!-- iF else
+<div class="container">
+<button class="btn btn-success" (click)="OnCreateBlock()">Create</button>
+<div *ngIf="isValid ;then thenblock  else elseblock "> </div>
+<ng-template #thenblock>
+    <div>Block Has been created </div>
+</ng-template>
+<ng-template #elseblock>
+    <div>No Block Has been created! </div>
+    </ng-template>
+</div>--> 
+   
+     <!-- Ng else if condition -->
+<!--<ng-template [ngIf]="color === 'red'">
+<h1 style="color: red">Red Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'black'">
+<h1 style="color: black">Black Color</h1>
+</ng-template>
+<ng-template [ngIf]="color === 'blue'">
+<h1 style="color: blue">Blue Color</h1> 
+</ng-template> -->
+
+           <!-- For-->
+<!--<h1> {{title}}</h1>
+<h3 *ngFor=" let item of users"> Name: {{item}}</h3>
+<h3 *ngFor=" let item of usersDetails"> Name={{item.name}}---Email={{item.email}}---Phone Number ={{item.phone}}</h3>-->
+
+            <!--Ng nested loop -->
+   <!-- <ul *ngFor="let user of users">
+    <li>{{user.name}}</li>
+    <li>{{user.phone}}</li>
+    <li>{{user.email}}</li>
+
+    <ul *ngFor=" let account of user.accounts">
+       <li>
+        {{account}}
+       </li>
+     </ul>
+    </ul> -->
+
+            <!-- Ng Switch-->
+<!--<div [ngSwitch]="color">
+<h1 *ngSwitchCase="'red'" style="color: red;">Red color</h1>    
+<h1 *ngSwitchCase="'black'" style="color: black;">Black color</h1>    
+<h1 *ngSwitchCase="'green'" style="color: green;">Green color</h1>    
+<h1 *ngSwitchCase="'orange'" style="color: orange;">Orange color</h1>    
+<h1 *ngSwitchCase="'blue'" style="color: blue;">Blue color</h1>    
+<h1 *ngSwitchCase="'pink'" style="color: pink;">Pink color</h1>    
+<h1 *ngSwitchCase="'grey'" style="color: grey;">Grey color</h1>    
+<h1 *ngSwitchCase="'brown'" style="color: brown;">Brown color</h1>    
+</div> -->
+                              <!--Ng Style -->
+<!--<div [ngStyle]="myStyles" style="border: 2px solid grey;" style="margin: 4px;"> hello world!</div>
+<button (click)="addStyles()"> Add style</button> -->
+                           
+                           <!--Ng Class -->
+                    <!--<div [ngClass]="myClasses"></div>
+              <button (click)="changeShape()"> Change Shape</button>-->
+
+                             <!--String Interpolation-->
+             <!-- <h1 style="text-align: center;">Welcome to {{name}}</h1>
+              <h2 style="text-align: center;">Welcome to the {{topic}} tutorial</h2> -->
+
+              <!-- Proprty Binding-->
+        <!--<input type="text" name="user-name" [value]=name [disabled]=disable>
+            <br/>
+           <br/>
+            <input type="text" name="user-name" [value]=age [disabled]=disable>
+          <br/>
+          <div>
+          <button >Click Here to disable</button>
+            </div>-->
+            
+                                <!-- Event Binding-->
+            <!--<button value="Laptop" (click)="onAddcart($event)">Laptop</button>
+            <button value="Tv" (click)="onAddcart($event)">Tv</button>
+            <button value="Fridge" (click)="onAddcart($event)">Fridge</button>
+            <button value="Watch" (click)="onAddcart($event)">Watch</button>
+            <button value="Mobile" (click)="onAddcart($event)">Mobile</button>
+            <p>{{msg}}</p> -->
+
+            <!--  Two Way Data Binding -->
+           
+            <!--<input type="text" [(ngModel)] = "name">
+            <h1>{{name}}</h1> -->
+            <!-- service -->
+          <!-- <ul>
+            <li *ngFor = "let user of users">
+           {{user.name}} : {{user.age}} : {{user.email}}
+            </li>
+          </ul>
+            <app-footer></app-footer> -->
+
+            <div style="text-align: center;"> 
+            <h1 style="background-color: black; color: white;">My Demo Project</h1>
+            <div style="text-align: center;">
+            <a routerLink="">Home</a>|
+            <a routerLink="about">About</a>|
+            <a routerLink="user">User</a>
+          </div>
+            <router-outlet></router-outlet>
+          </div>
